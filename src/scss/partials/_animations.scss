@@ -1,0 +1,54 @@
+:root{
+    // animations
+    --animation-sonar3: sonar-effect 3s ease-in-out .1s infinite;
+    --animation-sonar2: sonar-effect-strong 2s ease-in-out .1s infinite;
+    
+}
+
+
+
+@keyframes sonar-effect-strong {
+    0% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 0.5;
+      box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
+    }
+    100% {
+      box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  @keyframes sonar-effect {
+    0% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 0.5;
+      box-shadow: 0 0 0 5px #ffffff5c, 0 0 10px 10px #ffffff5c, 0 0 0 10px #ffffff5c;
+    }
+    100% {
+      box-shadow: 0 0 0 5px #ffffff5c, 0 0 10px 10px #ffffff5c, 0 0 0 10px #ffffff5c;
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fade-down {
+    0% {
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+    50% {
+      opacity: 0.8;
+      transform: translateY(15px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
